@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Step 5.2.3 scVI — run as a standalone script so it survives SSH disconnection.
+Optional scvi-tools SCVI workflow (not used for manuscript-reported comparison values). Run as a standalone script so it survives SSH disconnection.
 Usage:
     nohup python3 step5_2_3_scvi.py > step5_2_3_scvi.log 2>&1 &
     tail -f step5_2_3_scvi.log   # monitor progress

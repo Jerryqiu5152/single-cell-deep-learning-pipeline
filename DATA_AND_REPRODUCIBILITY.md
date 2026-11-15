@@ -30,10 +30,12 @@ Raw FASTQ and any other required upstream files must be obtained from GEO/SRA an
 
 ## Missing items for exact regeneration
 
-- The scvi-tools result `output/5.2.3_scVI/merged_scvi.h5ad` and saved scvi-tools model are not included. The notebook/helper can create them from the HVG input, but this run has not been repeated in this package.
+- The custom PyTorch scVI-style embedding at `output/5.2.3_scVI/scvi_custom/merged_scvi_custom.h5ad` and its saved model (`scvi_custom_model.pt`) are not included. The Step 5.3 evaluation CSV is also absent. The code specifies a 5,000-cell subsample with random state 0, but the comparison cannot be recomputed without the corresponding custom embedding and the NB-VAE and Harmony embeddings.
+- The manuscript-reported comparison values are transcribed in the notebook, not freshly calculated from files in this repository. The archived `run_data_JQ` notebook contains saved outputs from a different run with values that differ from the manuscript table; those outputs are not used as evidence for the reported values.
+- The separate `scripts/step5_2_3_scvi.py` script runs scvi-tools SCVI as an optional alternative. That representation did not produce the manuscript-reported comparison values. Its H5AD and model are not included.
 - The canonical marker notebook expects `hemibrain_nn_model.pt`, `hemibrain_scanvi_nbvae_model.pt`, and annotation H5AD outputs. These were not found.
 - The supplemental alternate workflow expects `customnn_model.pt`, `scanvi_nbvae_model.pt`, and `adata_umap.h5ad`. Those were not found either.
 - An older `merged_nbvae_model.pt` exists in a prior local output folder, but its compatibility with either marker workflow has not been established; it is not included as a substitute.
 - No original lockfile or complete environment export was found. `requirements.in` lists imported dependencies but has no pinned versions and has not been tested as an environment.
 
-The embedding comparison displayed in the canonical notebook is transcribed from the manuscript, not freshly computed. See `SOURCE_MANIFEST.md` for branch provenance and the status of supplemental files.
+The notebook displays manuscript-reported values; it does not include the saved evaluation CSV or the latent embeddings needed to regenerate them. See `SOURCE_MANIFEST.md` for branch provenance and the status of supplemental files.
