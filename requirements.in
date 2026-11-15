@@ -1,0 +1,20 @@
+# Direct Python dependencies observed in the project notebooks and scripts.
+# This is an input list for environment creation, not a tested or version-locked environment.
+anndata
+celltypist
+harmonypy
+jupyterlab
+leidenalg
+matplotlib
+mygene
+numpy
+pandas
+python-igraph
+scanpy
+scikit-learn
+scvi-tools
+shap
+scipy
+statsmodels
+torch
+openpyxl

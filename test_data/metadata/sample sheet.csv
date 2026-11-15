@@ -1,0 +1,4 @@
+sample,fastq_1,fastq_2,disease_state,treatment,species
+SRR14575500,fastqs/SRR14575500_R1_001.fastq.gz,fastqs/SRR14575500_R2_001.fastq.gz,health,ctr,Human
+SRR14575504,fastqs/SRR14575504_R1_001.fastq.gz,fastqs/SRR14575504_R2_001.fastq.gz,periodontitis_patient,pre-treatment,Human
+SRR14575508,fastqs/SRR14575508_R1_001.fastq.gz,fastqs/SRR14575508_R2_001.fastq.gz,periodontitis_patient,post-treatment,Human

@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Local and generated files
+.DS_Store
+Thumbs.db
+*.log
+
+# Large intermediate single-cell objects and model checkpoints
+*.h5ad
+checkpoints/
+
+# Include the six recovered per-run H5AD preprocessing inputs in this release.
+!test_data/analysis_tree/cellranger/mtx_conversions/**/*.h5ad
