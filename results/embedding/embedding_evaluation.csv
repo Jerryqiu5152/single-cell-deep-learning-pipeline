@@ -1,7 +1,5 @@
-,Batch ASW (↓),Bio ASW (↑),kNN batch purity (↓),Batch correction (↑),Bio preservation (↑),Overall score (↑)
-"NB-VAE
-(5.2.1)",0.0038,-0.0038,0.4183,0.9962,0.4981,0.6973
-"Harmony
-(5.2.2)",0.0366,-0.0366,0.4085,0.9634,0.4817,0.6744
-"scVI
-(5.2.3)",0.003,-0.003,0.4178,0.997,0.4985,0.6979
+Method,Batch ASW (lower),Bio ASW (higher),kNN batch purity (lower),Batch correction (higher),Bio preservation (higher),Overall score (higher)
+NB-VAE,0.0038,-0.0038,0.4183,0.9962,0.4981,0.697345
+PCA + Harmony,0.0366,-0.0366,0.4085,0.9634,0.4817,0.674383
+Custom PyTorch scVI-style VAE,0.0030,-0.0030,0.4178,0.9970,0.4985,0.697902
+
